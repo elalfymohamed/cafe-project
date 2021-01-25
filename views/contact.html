@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe House - Contact Info.</title>
+    <link rel="shortcut icon" href="../content/assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../content/css/abstract/brands.min.css" />
+    <link rel="stylesheet" href="../content/css/abstract/bootstrap.min.css" />
+    <link rel="stylesheet" href="../content/css/style.css" />
+</head>
+
+<body>
+    <!-- start header tag -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../content/assets/img/logo.png" alt="logo" class="d-inline-block align-top" />
+                    <span>Cafe House</span>
+                </a>
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Today Special</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header tag -->
+    <!-- start section tag -->
+    <section class="main-section light-gr-bg pt-170 pb-60">
+        <div class="container">
+            <div class="row">
+                <h2 class="col-lg-12 mb-30">Send us a message</h2>
+                <article class="col-lg-6 col-md-6">
+                    <form article="#" class="contact-form">
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" id="exampleInputName" aria-describedby="nema"
+                                placeholder="NAME">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email"
+                                placeholder="EMAIL">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" id="exampleInputSubject" aria-describedby="subject"
+                                placeholder="SUBJECT">
+                        </div>
+                        <div class="form-group mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                                placeholder="MESSAGE"></textarea>
+                        </div>
+                        <div class="form-group mb-3">
+                            <button type="submit" name="submit" class="btn more-btn gold-color">Send massage</button>
+                        </div>
+                    </form>
+                </article>
+                <article class="col-lg-6 col-md-6">
+                    <div id="map" style="width:100%;height:350px;"></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- end section tag -->
+    <script>
+        function initMap() {
+            const ulu = { lat: -25.344, lng: 131.036 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: ulu,
+            });
+            const marker = new google.maps.Marker({
+                position: ulu,
+                map: map,
+            });
+        }
+    </script>
+    <script src="../content/js/absteact/bootstrap.bundle.min.js"></script>
+    <script src="../content/js/absteact/brands.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC73-He0-RQKJIKqLy6tVF6ZwcGPW7UImo&callback=initMap"></script>
+    <script src="../content/js/script.js"></script>
+
+</body>
+
+</html>
