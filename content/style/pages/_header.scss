@@ -1,0 +1,44 @@
+.main-header {
+  .navbar {
+    background-color: $header-bg;
+    color: $header-color;
+
+    .navbar-brand {
+      span {
+        font-family: "Damion";
+        font-size: 30px;
+        color: $header-color;
+        margin: 0 7px;
+      }
+    }
+  }
+
+  // .collapse
+  .nav-item {
+    .nav-link {
+      transition: all 0.3s;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      padding: 15px 15px 20px 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      &.active {
+        color: $header-color;
+        background: url("../assets/img/logo.png") no-repeat,
+          url("../assets/img/nav-underline.png") no-repeat;
+        background-size: 20px, 74px 17px;
+        background-position: 0% 30%, center bottom;
+      }
+
+      &:hover {
+        color: $header-color-hover;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    color: #c79c6046;
+    border-color: $gold-text;
+  }
+}

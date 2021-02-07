@@ -1,0 +1,24 @@
+.main-section {
+  form {
+    .form-group {
+      .form-control {
+        border-color: $border-color;
+        border-radius: 10px;
+        font-size: 14px;
+
+        &:focus {
+          border-color: $form-focus;
+          box-shadow: $form-shadow;
+        }
+      }
+
+      .more-btn {
+        @include btn;
+
+        &:hover {
+          color: $width-text;
+        }
+      }
+    }
+  }
+}

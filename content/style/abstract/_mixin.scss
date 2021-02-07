@@ -1,0 +1,17 @@
+@mixin menu_a_act {
+  color: $header-color-hover !important;
+  text-decoration: none;
+}
+
+@mixin btn {
+  display: flex;
+  justify-content: center;
+  background: url("../assets/img/tm-brown-button.png") no-repeat;
+  width: 198px;
+  height: 48px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  -webkit-align-items: center;
+  align-items: center;
+}

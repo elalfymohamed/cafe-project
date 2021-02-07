@@ -1,0 +1,65 @@
+/* start generic style */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.42;
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+a {
+  color: $link-header-color;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.light-gr-bg {
+  background-color: $section-bg;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.pt-170 {
+  padding-top: 170px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.handwriting-font {
+  font-family: "Damion";
+}
+
+.gold-color {
+  color: $gold-text;
+}
+
+.blue-text {
+  color: $blue-text;
+}
+
+.green-text {
+  color: $green-text;
+}
+
+/* end generic style */

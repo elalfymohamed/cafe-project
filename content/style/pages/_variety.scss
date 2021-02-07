@@ -1,0 +1,31 @@
+.main-section {
+  article {
+
+    // first article
+    .welcome-description {
+      text-align: justify;
+    }
+
+    .more-btn {
+      @include btn;
+
+      &:hover {
+        color: $width-text;
+      }
+    }
+  }
+
+  // scant article
+
+  .shadow-img {
+    background: url("../assets/img/shadow.png") no-repeat center bottom;
+    padding-bottom: 7px;
+
+    .img-thumbnail {
+      padding: 9px;
+      background: $width-text;
+      border: 1px solid #ddd;
+      max-width: 100%;
+    }
+  }
+}
