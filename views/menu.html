@@ -14,7 +14,6 @@
 
 <body>
     <!-- start header tag -->
-
     <header class="main-header">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
@@ -23,18 +22,17 @@
                     <span>Cafe House</span>
                 </a>
                 <div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link " aria-current="page" href="./index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Today Special</a>
+                                <a class="nav-link" href="./todySpecial.html">Today Special</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="./menu.html">Menu</a>
@@ -47,6 +45,41 @@
                 </div>
             </div>
         </nav>
+        <div class="main-header__welcome-container">
+            <div class="container">
+                <div class="position-relative">
+                    <div class="welcome-container__light-container">
+                        <img src="../content/assets/img/light.png" alt="light" />
+                        <img src="../content/assets/img/light.png" alt="light" />
+                        <img src="../content/assets/img/light.png" alt="light" />
+                    </div>
+
+                </div>
+                <div class="welcome-container__welcome-message">
+                    <div class="welcome-message-header d-flex justify-content-center align-items-center">
+                        <img src="../content/assets/img/header-line.png" alt="header" />
+                        <h1 class="white-text">Welcome To</h1>
+                        <img src="../content/assets/img/header-line.png" alt="header" />
+                    </div>
+                    <h2 class="gold-text">Cafe House</h2>
+                    <p>
+                        Cafe House template is a mobile-friendly responsive
+                        <span class="gold-text">Bootstrap v3.3.5</span> layout by
+                        <a rel="nofollow" href="#">
+                            <span class="gold-text">templatemo</span></a>. Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.
+                        Aenean commodo ligula eget dolor . Aenean massa. Cum sociis
+                        natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculusnec quam felis, ultricies nec, pellentesque eu, pretium
+                        quis, sem.
+                    </p>
+                    <a href="#" class=" btn--details gold-text btn-welcome">Details</a>
+                </div>
+                <div class="welcome-container__table d-flex justify-content-center">
+                    <img src="../content/assets/img/table-set.png" alt="table-set" />
+                </div>
+            </div>
+        </div>
     </header>
     <!-- end header tag -->
     <!-- start section tag -->
@@ -54,7 +87,7 @@
         <div class="container">
             <div class="row">
                 <article class="col-lg-9 col-md-9 col-sm-8">
-                    <h2 class="gold-color handwriting-font">Variety of Menus</h2>
+                    <h2 class="gold-text handwriting-font">Variety of Menus</h2>
                     <h3>Cafe House</h3>
                     <p class="welcome-description">
                         This is free HTML5 website template from
@@ -66,7 +99,7 @@
                         sapien ut libero venenatis faucibus. Ettiam sit amet orci eget
                         eros faucibus tincidunt.
                     </p>
-                    <a href="#" class="more-btn mt-30 gold-color">Read More</a>
+                    <a href="#" class="more-btn mt-30 gold-text">Read More</a>
                 </article>
                 <div class="col-lg-3 col-md-3 col-sm-4 text-end">
                     <div class="d-inline-block shadow-img">
@@ -80,15 +113,12 @@
     <!-- start section tag -->
     <section class="menus-section light-gr-bg pb-60">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 menu-section-title mb-30">
-                    <h2 class="menu-title gold-color  handwriting-font mt-4 ">
-                        <img src="../content//assets/img/logo.png" alt="" class="align-bottom" />
-                        Our Menus
-                    </h2>
-                    <div class="line-container"></div>
-                </div>
-            </div>
+
+            <h2 class=" gold-text mb-5 ">
+                <img src="../content//assets/img/logo.png" alt="" />
+                Our Menus
+            </h2>
+
             <div class="row">
                 <div class="col-lg-3 col-md-4">
                     <div class="position-relative mb-30">

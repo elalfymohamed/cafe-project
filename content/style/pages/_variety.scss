@@ -8,9 +8,12 @@
 
     .more-btn {
       @include btn;
+      padding: 13px 45px;
+      background-position: left;
+      justify-content: flex-start;
 
       &:hover {
-        color: $width-text;
+        color: $white-text;
       }
     }
   }
@@ -23,7 +26,7 @@
 
     .img-thumbnail {
       padding: 9px;
-      background: $width-text;
+      background: $white-text;
       border: 1px solid #ddd;
       max-width: 100%;
     }

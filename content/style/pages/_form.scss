@@ -14,9 +14,10 @@
 
       .more-btn {
         @include btn;
+        padding: 18px 42px;
 
         &:hover {
-          color: $width-text;
+          color: $white-text;
         }
       }
     }

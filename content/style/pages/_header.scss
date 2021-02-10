@@ -2,6 +2,8 @@
   .navbar {
     background-color: $header-bg;
     color: $header-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     .navbar-brand {
       span {
@@ -18,10 +20,11 @@
     .nav-link {
       transition: all 0.3s;
       font-family: "Open Sans", sans-serif;
-      font-size: 14px;
+      font-size: 15px;
       padding: 15px 15px 20px 30px;
       font-weight: bold;
       text-transform: uppercase;
+      color: $white-text;
 
       &.active {
         color: $header-color;
@@ -40,5 +43,65 @@
   .navbar-toggler {
     color: #c79c6046;
     border-color: $gold-text;
+  }
+
+  .main-header__welcome-container {
+    background-color: $header_wel-bg;
+    text-align: center;
+
+    .welcome-container__light-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+
+    .welcome-container__welcome-message {
+      padding-top: 160px;
+      margin-bottom: 398px;
+
+      h1 {
+        font-size: 56px;
+        font-family: 'Damion', cursive;
+        padding: 0 30px;
+      }
+
+      h2 {
+        font-size: 62px;
+        text-transform: uppercase;
+      }
+
+      p {
+        color: $gray-text;
+        text-align: justify;
+        max-width: 655px;
+        margin: auto;
+      }
+
+      .btn-welcome {
+        @include btn;
+
+        &.btn--details {
+          padding: 13px 0;
+          margin: 40px auto;
+        }
+
+        &:hover {
+          color: $white-text;
+        }
+
+      }
+    }
+
+    .welcome-container__table {
+      img {
+        position: absolute;
+        bottom: -103px;
+      }
+    }
   }
 }
