@@ -1,9 +1,6 @@
 .menus-section {
-
-
   h2 {
-    font-size: 30px;
-    position: relative;
+    @include title;
 
     &::after {
       @include line-after;
@@ -13,7 +10,6 @@
       vertical-align: sub;
     }
   }
-
 
   div {
     .side-menu {
@@ -50,6 +46,10 @@
   }
 
   .menu-product-content {
+    a {
+      color: $white-text;
+    }
+
     .product {
       margin-bottom: 20px;
       cursor: pointer;

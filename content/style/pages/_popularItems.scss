@@ -2,9 +2,7 @@
   padding-top: 30px;
 
   h2 {
-    font-family: Damion, cursive;
-    font-size: 30px;
-    position: relative;
+    @include title;
 
     &::after {
       @include line-after;
@@ -18,8 +16,7 @@
   .popular-items__card {
     height: 85%;
     max-width: 294px;
-    box-shadow: 2px 1px 5px rgba(165, 165, 165, 0.726),
-      -2px 1px 5px rgba(165, 165, 165, 0.726);
+    box-shadow: 2px 1px 5px rgba(165, 165, 165, 0.726), -2px 1px 5px rgba(165, 165, 165, 0.726);
 
     .popular-items__card__container {
       text-align: center;
@@ -64,8 +61,7 @@
     }
 
     &:hover {
-      box-shadow: 2px 1px 5px rgba(165, 165, 165, 0.726),
-        -2px 1px 5px rgba(165, 165, 165, 0.726), 0px 3px 4px #2020209c;
+      box-shadow: 2px 1px 5px rgba(165, 165, 165, 0.726), -2px 1px 5px rgba(165, 165, 165, 0.726), 0px 3px 4px #2020209c;
 
       .popular-items__card__title {
         color: $gold-text;
@@ -80,4 +76,8 @@
       }
     }
   }
+}
+
+.popular-items__page {
+  padding-top: 200px;
 }

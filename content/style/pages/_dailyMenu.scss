@@ -1,0 +1,42 @@
+.daily-menu {
+  h2 {
+    @include title;
+
+    &::after {
+      @include line-after;
+    }
+
+    img {
+      vertical-align: sub;
+    }
+  }
+
+  .daily-menu__container {
+    margin-top: 2rem;
+
+    ol {
+      counter-reset: item;
+
+      li {
+        &::before {
+          content: counter(item) ". ";
+          counter-increment: item;
+          color: $gold-text;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .daily-menu__more__btn {
+      @include btn;
+      color: $gold-text;
+      padding: 13px 45px;
+      background-position: left;
+      justify-content: flex-start;
+
+      &:hover {
+        color: $white-text;
+      }
+    }
+  }
+}

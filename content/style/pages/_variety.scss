@@ -1,7 +1,5 @@
-.main-section {
+.cafe-house {
   article {
-
-    // first article
     .welcome-description {
       text-align: justify;
     }
@@ -18,17 +16,25 @@
     }
   }
 
-  // scant article
+  .cafe-house__text-end {
+    text-align: end;
 
-  .shadow-img {
-    background: url("../assets/img/shadow.png") no-repeat center bottom;
-    padding-bottom: 7px;
+    // ! @media 768px
+    @include respond(tablet) {
+      padding-top: 20px;
+      text-align: left;
+    }
 
-    .img-thumbnail {
-      padding: 9px;
-      background: $white-text;
-      border: 1px solid #ddd;
-      max-width: 100%;
+    .shadow-img {
+      background: url("../assets/img/shadow.png") no-repeat center bottom;
+      padding-bottom: 7px;
+
+      .img-thumbnail {
+        padding: 9px;
+        background: $white-text;
+        border: 1px solid #ddd;
+        max-width: 100%;
+      }
     }
   }
 }

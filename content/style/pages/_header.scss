@@ -28,8 +28,7 @@
 
       &.active {
         color: $header-color;
-        background: url("../assets/img/logo.png") no-repeat,
-          url("../assets/img/nav-underline.png") no-repeat;
+        background: url("../assets/img/logo.png") no-repeat, url("../assets/img/nav-underline.png") no-repeat;
         background-size: 20px, 74px 17px;
         background-position: 0% 30%, center bottom;
       }
@@ -57,22 +56,73 @@
       display: flex;
       justify-content: space-between;
 
-    }
+      // ! @media 992px
+      @include respond(medium) {
+        img {
+          width: 240px;
+          height: auto;
+        }
+      }
 
+      // ! @media 768px
+      @include respond(tablet) {
+        justify-content: center;
+
+        img {
+          &:nth-child(1) {
+            display: none;
+          }
+
+          &:nth-child(3) {
+            display: none;
+          }
+        }
+      }
+    }
 
     .welcome-container__welcome-message {
       padding-top: 160px;
-      margin-bottom: 398px;
+      margin-bottom: 410px;
+
+      // ! @media 992px
+      @include respond(medium) {
+        margin-bottom: 330px;
+      }
+
+      // ! @media 550px
+      @include respond(tabletM) {
+        margin-bottom: 205px;
+      }
+
+      // ! @media 375px
+      @include respond(mobileL) {
+        margin-bottom: 190px;
+      }
+
+      // ! @media 320px
+      @include respond(mobileS) {
+        margin-bottom: 150px;
+      }
 
       h1 {
         font-size: 56px;
-        font-family: 'Damion', cursive;
+        font-family: "Damion", cursive;
         padding: 0 30px;
+
+        // ! @media 480px
+        @include respond(mobileL) {
+          font-size: 35px;
+        }
       }
 
       h2 {
         font-size: 62px;
         text-transform: uppercase;
+
+        // ! @media 480px
+        @include respond(mobileL) {
+          font-size: 50px;
+        }
       }
 
       p {
@@ -93,14 +143,50 @@
         &:hover {
           color: $white-text;
         }
-
       }
     }
 
     .welcome-container__table {
+      display: flex;
+
       img {
         position: absolute;
-        bottom: -103px;
+        bottom: -122px;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        // ! @media 992px
+        @include respond(medium) {
+          bottom: -20px;
+          width: 85%;
+        }
+
+        // ! @media 768px
+        @include respond(tablet) {
+          bottom: -8px;
+          width: 100%;
+        }
+
+        // ! @media 550px
+        @include respond(tabletM) {
+          bottom: 115px;
+        }
+
+        // ! @media 480px
+        @include respond(mobileL) {
+          bottom: 155px;
+        }
+
+        // ! @media 375px
+        @include respond(mobileM) {
+          bottom: 105px;
+        }
+
+        // ! @media 320px
+        @include respond(mobileS) {
+          bottom: 60px;
+        }
       }
     }
   }
