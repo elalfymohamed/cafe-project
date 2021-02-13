@@ -148,17 +148,18 @@
 
     .welcome-container__table {
       display: flex;
+      position: relative;
 
       img {
         position: absolute;
-        bottom: -122px;
+        bottom: -102px;
         left: 0;
         right: 0;
         margin: auto;
 
         // ! @media 992px
         @include respond(medium) {
-          bottom: -20px;
+          bottom: -80px;
           width: 85%;
         }
 
@@ -170,22 +171,22 @@
 
         // ! @media 550px
         @include respond(tabletM) {
-          bottom: 115px;
+          bottom: -50px;
         }
 
         // ! @media 480px
         @include respond(mobileL) {
-          bottom: 155px;
+          bottom: -42px;
         }
 
         // ! @media 375px
         @include respond(mobileM) {
-          bottom: 105px;
+          bottom: -38px;
         }
 
         // ! @media 320px
         @include respond(mobileS) {
-          bottom: 60px;
+          bottom: -33px;
         }
       }
     }

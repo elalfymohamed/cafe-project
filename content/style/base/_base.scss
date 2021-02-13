@@ -84,6 +84,31 @@ li {
     right: 0;
     background: transparent;
   }
+
+  // ! @media 768px
+  @include respond(tablet) {
+    width: 32%;
+  }
+
+  // ! @media 550px
+  @include respond(tabletM) {
+    width: 40%;
+  }
+
+  // ! @media 480px
+  @include respond(mobileL) {
+    width: 51%;
+  }
+
+  // ! @media 375px
+  @include respond(mobileM) {
+    width: 58%;
+  }
+
+  // ! @media 320px
+  @include respond(mobileS) {
+    width: 70%;
+  }
 }
 
 /* end generic style */
